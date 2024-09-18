@@ -1,0 +1,41 @@
+# 忽略 Visual Studio 生成的文件
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# 忽略日志文件
+*.log
+*.tlog
+*.err
+
+# 编译输出目录
+bin/
+obj/
+
+# 忽略 CMake 的构建目录
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CMakeLists.txt.user
+
+# 忽略构建时的中间文件
+ipch/
+*.pch
+
+# 忽略数据库文件
+*.db
+*.opendb
+
+# 忽略构建时生成的临时文件
+*.tmp
+*.temp
+
+# 忽略调试器相关的文件
+*.pdb
+*.ilk
+
+# 忽略 Visual Studio 的调试日志
+*.tlog
