@@ -93,3 +93,4 @@ void ArrayBinaryTree::posorder(int index)
 	preorder(2 * index + 2);
 	cout << tree[index] << " ";
 }
+
