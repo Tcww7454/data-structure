@@ -47,6 +47,10 @@ public:
         cout <<endl;
     }
 
+    void levelorder() override;
+
+    void removeElement(int val)override;
+
     Node* getRoot() const {
         return root;
     }

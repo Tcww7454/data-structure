@@ -1,2 +1,5 @@
-﻿  main.cpp
+﻿  ArrayBinaryTree.cpp
+D:\AAAchengxv\C++\datastructre\pratice\BInaryTree\ArrayBinaryTree.cpp(37,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  main.cpp
+  正在生成代码...
   BInaryTree.vcxproj -> D:\AAAchengxv\C++\datastructre\pratice\BInaryTree\x64\Debug\BInaryTree.exe

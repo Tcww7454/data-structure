@@ -34,3 +34,33 @@ Node* LinkedListBinaryTree::insert(Node* node, int val)
 		node->left = insert(node->left, val);
 	return node;
 }
+
+void LinkedListBinaryTree::levelorder()
+{
+	queue<Node*> nodeQueue;
+
+	if (root != nullptr)
+		nodeQueue.push(root);
+	else
+		return;
+
+	while (!nodeQueue.empty()) {
+		int size = nodeQueue.size();
+		for (int i = 0; i < size; ++i) {
+			Node* front = nodeQueue.front();
+			nodeQueue.pop();
+			if (front->left != nullptr) {
+				nodeQueue.push(front->left);
+			}
+			if (front->right != nullptr) {
+				nodeQueue.push(front->right);
+			}
+			cout << front->value << " ";
+		}
+		cout << endl;
+	}
+}
+
+void LinkedListBinaryTree::removeElement(int val)
+{
+}

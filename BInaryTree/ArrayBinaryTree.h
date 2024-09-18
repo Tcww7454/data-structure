@@ -17,6 +17,10 @@ public:
 	void inorder() override;
 
 	void posorder() override;
+
+	void levelorder() override;
+
+	void removeElement(int val)override;
 private:
 	vector<int> tree;
 

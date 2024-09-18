@@ -111,11 +111,13 @@ int main() {
 
     LinkedListBinaryTreeTest::inorderTest();*/
 
-    ArrayBinaryTree abt;
-    abt.insert(6);
-    abt.insert(4);
-    abt.insert(8);
+    BinaryTree* llbt = new ArrayBinaryTree(); //ÀûÓÃ¶àÌ¬
 
-    abt.posorder();
+    llbt->insert(6);
+    llbt->insert(4);
+    llbt->insert(8);
+    llbt->insert(2);
+
+    llbt->levelorder();
 }
 
