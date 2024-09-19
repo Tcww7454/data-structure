@@ -15,7 +15,7 @@ public:
 class LinkedListBinaryTree :
     public BinaryTree
 {
-private:
+protected:
     Node* root;
 
     void preorder(Node* node);
@@ -25,6 +25,8 @@ private:
     void posorder(Node* node);
 
     Node* insert(Node* node, int val);
+
+    Node* searchBSTHelper(Node* node, int val);
 public:
     LinkedListBinaryTree():root(nullptr){}
 
@@ -48,6 +50,9 @@ public:
     }
 
     void levelorder() override;
+
+    Node* searchBST(int val);
+
 
     void removeElement(int val)override;
 

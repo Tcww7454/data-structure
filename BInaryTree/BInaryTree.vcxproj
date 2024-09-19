@@ -130,11 +130,13 @@
     <ClCompile Include="ArrayBinaryTree.cpp" />
     <ClCompile Include="LinkedListBinaryTree.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="RedBlackTree.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ArrayBinaryTree.h" />
     <ClInclude Include="BinaryTree.h" />
     <ClInclude Include="LinkedListBinaryTree.h" />
+    <ClInclude Include="RedBlackTree.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

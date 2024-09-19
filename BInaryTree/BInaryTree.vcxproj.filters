@@ -24,6 +24,9 @@
     <ClCompile Include="ArrayBinaryTree.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="RedBlackTree.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="BinaryTree.h">
@@ -33,6 +36,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="ArrayBinaryTree.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RedBlackTree.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

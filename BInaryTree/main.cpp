@@ -1,5 +1,5 @@
 #include<iostream>
-#include"LinkedListBinaryTree.h"
+#include"RedBlackTree.h"
 #include"ArrayBinaryTree.h"
 #include <cassert>
 #include<sstream>
@@ -111,13 +111,23 @@ int main() {
 
     LinkedListBinaryTreeTest::inorderTest();*/
 
-    BinaryTree* llbt = new ArrayBinaryTree(); //利用多态
+    BinaryTree* llbt = new RedBlackTree(); //利用多态
 
     llbt->insert(6);
     llbt->insert(4);
     llbt->insert(8);
     llbt->insert(2);
+    llbt->insert(5);
+    llbt->insert(12);
+    llbt->insert(35);
+    llbt->insert(28);
+    llbt->insert(45);
+    llbt->insert(0);
+    llbt->insert(-5);
+    llbt->insert(-7);
 
     llbt->levelorder();
+
+    // 似乎保持了平衡
 }
 
