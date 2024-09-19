@@ -19,15 +19,15 @@ int main() {
 
     //中文字符存在编码错误
     // 打印遍历结果
-    //cout << "前序遍历: ";
+    // cout<<"前序遍历：\t";
     myTree.preorder(myTree.getRoot());
     cout << endl << std::flush;
 
-    //cout << "中序遍历: ";
+     //cout<<"中序遍历：\t";
     myTree.inorder(myTree.getRoot());
     cout << endl << std::flush;
 
-    //cout << "后序遍历: ";
+    //cout<<"后序遍历：\t";
     myTree.postorder(myTree.getRoot());
     cout << endl << std::flush;
 
