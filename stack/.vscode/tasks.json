@@ -10,6 +10,7 @@
 				"-g",
 				"main.cpp",
 				"LinkedListStack.cpp",
+				"ArrayStack.cpp",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],
