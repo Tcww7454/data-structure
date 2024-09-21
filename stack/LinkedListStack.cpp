@@ -48,3 +48,16 @@ int LinkedListStack::top()
     }
     return stackTop->value;
 }
+
+int *LinkedListStack::to_arr()
+{   
+    if(stkSize==0) return nullptr;
+    int *arr=new int [stkSize];
+    ListNode *stack_top=stackTop;
+    for(int i=stkSize-1;i>=0;i--)
+    {
+        arr[i]=stack_top->value;
+        stack_top=stack_top->next;
+    }
+    return arr;
+}

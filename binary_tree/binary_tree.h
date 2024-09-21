@@ -7,9 +7,13 @@ class binary_tree:public tree
 {
     public:
         binary_tree(node*root=nullptr);
-        void preorder(node*root);
-        void inorder(node*root);
-        void postorder(node*root);
+        void preorder(node*root)override;
+        void inorder(node*root)override;
+        void postorder(node*root)override;
+        //普通的二叉树这里考虑使用层序遍历来实现插入
+        void insert(int value)override;
+        node* get_root(){return Root;};
+
         ~binary_tree();
 };
 

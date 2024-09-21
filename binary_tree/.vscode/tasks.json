@@ -11,6 +11,7 @@
 				"main.cpp",
 				"tree.cpp",
 				"binary_tree.cpp",
+				"binary_search_tree.cpp",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],

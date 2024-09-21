@@ -1,7 +1,7 @@
 #include"tree.h"
 #include"binary_tree.h"
 #include<iostream>
-
+#include<queue>
 
 binary_tree::binary_tree(node*root)
 {
@@ -35,4 +35,42 @@ void binary_tree::postorder(node*root)
 binary_tree::~binary_tree()
 {
     destory_tree(Root);
+}
+
+
+void binary_tree::insert(int value)
+{
+    node*temp=new node(value);
+    if(Root==nullptr)
+    {
+        Root=temp;
+        return ;
+    }
+    else
+    {
+        std::queue<node*>q;
+        q.push(Root);
+
+        while(!q.empty())
+        {
+            node* current=q.front();
+            q.pop();
+
+            if(current->left==nullptr)
+            {
+                current->left=temp;
+                return ;
+            }
+            else
+                q.push(current->left);
+
+            if(current->right==nullptr)
+            {
+                current->right=temp;
+                return ;
+            }
+            else
+                q.push(current->right);
+        }
+    }
 }

@@ -25,6 +25,7 @@ class LinkedListStack//单向链表
         void push(int num);
         int pop();
         int top();
+        int *to_arr();//记得delete谢谢喵
 };
 
 #endif

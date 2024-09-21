@@ -21,9 +21,10 @@ class tree
         
         tree(node* root=nullptr);
 
-        virtual void preorder()=0;
-        virtual void inorder()=0;
-        virtual void postorder()=0;
+        virtual void preorder(node*root)=0;
+        virtual void inorder(node*root)=0;
+        virtual void postorder(node*root)=0;
+        virtual void insert(int value)=0;
 
         virtual ~tree();
 };
