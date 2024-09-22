@@ -6,7 +6,7 @@ class AdjListGraph :
 private:
     int numVertices; // ¶¥µãÊý
     int adjacencyCount; // ±ßÊý
-    vector<list<int>>adjMatrix;
+    vector<list<int>>adjList;
 public:
     AdjListGraph(int vertices);
 
