@@ -10,6 +10,7 @@
 				"-g",
 				"main.cpp",
 				"adjacency_matrix.cpp",
+				"adjacency_list.cpp",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],

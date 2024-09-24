@@ -1,7 +1,7 @@
 #include<iostream>
 #include <windows.h>
 #include"adjacency_matrix.h"
-
+#include"adjacency_list.h"
 
 void testadj_mat()
 {
@@ -26,10 +26,29 @@ void testadj_mat()
      Graph_first.print();
 }
 
+void testadj_list()
+{
+    //我直接cv
+    AdjListGraph* ag = new AdjListGraph(10);
+
+    ag->addEdge(1, 2);
+    ag->addEdge(2, 3);
+    ag->addEdge(1, 4);
+    ag->addEdge(4, 5);
+    ag->addEdge(2, 6);
+    ag->addEdge(6, 7);
+    ag->addEdge(3, 8);
+    ag->addEdge(8, 9);
+    ag->BFS(1);
+}
+
 int main()
 {
     SetConsoleOutputCP(CP_UTF8);
     //std::cout<<1<<std::endl;
-    testadj_mat();
+    //testadj_mat();
+    testadj_list();
     return 0;
 }
+
+
