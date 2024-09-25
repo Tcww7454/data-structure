@@ -14,6 +14,7 @@
 				"adjacency_list.cpp",
 				"prim.cpp",
 				"Dijstra.cpp",
+				"kruskal.cpp",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],

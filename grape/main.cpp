@@ -4,6 +4,7 @@
 #include"adjacency_list.h"
 #include"prim.h"
 #include"Dijkstra.h"
+#include"kruskal.h"
 
 void testadj_mat()
 {
@@ -86,6 +87,21 @@ void testdijstra()
 
 }
 
+void testkruskal()
+{
+    Kruskal kruskalGraph(4);
+
+    // 添加图中的边
+    kruskalGraph.addEdge(0, 1, 10);
+    kruskalGraph.addEdge(0, 2, 6);
+    kruskalGraph.addEdge(0, 3, 5);
+    kruskalGraph.addEdge(1, 3, 15);
+    kruskalGraph.addEdge(2, 3, 4);
+
+    // 计算并打印最小生成树
+    kruskalGraph.kruskalMST();
+}
+
 int main()
 {
     SetConsoleOutputCP(CP_UTF8);
@@ -93,7 +109,8 @@ int main()
     //testadj_mat();
     //testadj_list();
     //testprim();
-    testdijstra();
+    //testdijstra();
+    testkruskal();
     return 0;
 }
 
