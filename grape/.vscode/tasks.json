@@ -6,12 +6,14 @@
 			"label": "C/C++: g++.exe 生成活动文件",
 			"command": "C:\\mingw64\\bin\\g++.exe",
 			"args": [
+				"-std=c++17",
 				"-fdiagnostics-color=always",
 				"-g",
 				"main.cpp",
 				"adjacency_matrix.cpp",
 				"adjacency_list.cpp",
 				"prim.cpp",
+				"Dijstra.cpp",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],

@@ -113,9 +113,9 @@ void PrimeGraph::generateMST(int start)
     }
 
     // 输出按遍历顺序生成的最小生成树的边
-    for (auto [start, end, weight] : mst_edges) {
-        std::cout << "Added edge: " << start << " - " << end << " with weight " << weight << std::endl;
-    }
+    // for (auto [start, end, weight] : mst_edges) {
+    //     std::cout << "Added edge: " << start << " - " << end << " with weight " << weight << std::endl;
+    // }
 
     // 判断图是否连通
     if (edge_count != n - 1) {
