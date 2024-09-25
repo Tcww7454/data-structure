@@ -46,20 +46,20 @@ void AdjListGraph::DFS(int start)
 {
 	if (start < 0 || start >= numVertices)
 		throw out_of_range("Index out of range");
-	vector<char> visited(numVertices, 0);
+	vector<char>visited(numVertices, 0);
 	stack<int> stk;
 	stk.push(start);
 	visited[start] = true;
 
-	while (!stk.empty()) {
+	while (!stk.empty()){
 		int top = stk.top();
 		stk.pop();
 		cout << top << " ";
 
-		for (int val : adjList[top]) {
-			if (!visited[val]) {
-				stk.push(val);
-				visited[val] = 1;
+		for (const int& tmp : adjList[top]) {
+			if (!visited[tmp]) {
+				stk.push(tmp);
+				visited[tmp] = 1;
 			}
 		}
 	}
