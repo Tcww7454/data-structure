@@ -1,6 +1,6 @@
 #include"Graph.h"
 
-int main() {
+int main(){
     Graph g1(9);
     g1.addEdge(0, 1, 3);  
     g1.addEdge(0, 2, 5);  
@@ -28,3 +28,4 @@ int main() {
 
     return 0;
 }
+

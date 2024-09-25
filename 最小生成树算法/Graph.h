@@ -28,6 +28,8 @@ public:
     void dfs(int start);
     void bfs(int start);
     vector<Edge> primMST(int start);
+
+    int shortestPath(int start, int end);
 private:
     int vertices;
     std::vector<std::list<std::pair<int, int>>> adjList;

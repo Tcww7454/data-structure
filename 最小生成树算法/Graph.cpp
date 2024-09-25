@@ -100,6 +100,37 @@ vector<Edge> Graph::primMST(int start) {
     return res;
 }
 
+int Graph::shortestPath(int start, int end) {
+    priority_queue<pair<int, int>, vector<pair<int, int>>, greater<>> pq; // 第一个 int 指代的是节点到start的距离 第二个是权重
+    vector<int> dist(vertices, INT_MAX); // 记录目前每个节点到start节点的最小距离
+    vector<int> predecessor(vertices, -1); // 记录前驱节点
+
+    dist[start] = 0;
+    pq.push({ 0, start });
+
+    while (!pq.empty()) {
+        int u = pq.top().second;
+        pq.pop();
+
+        if (u == end) {
+            return dist[end];
+        }
+
+        for (const auto& neighbor : adjList[u]) {
+            int v = neighbor.first;
+            int weight = neighbor.second;
+
+            if (dist[u] + weight < dist[v]) {
+                dist[v] = dist[u] + weight;
+                predecessor[v] = u;
+                pq.push({ dist[v], v });
+            }
+        }
+    }
+
+    return -1; // 终点不可达
+}
+
 
 
 
