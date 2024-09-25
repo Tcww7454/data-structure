@@ -1,10 +1,11 @@
 #include<vector>
+#include<unordered_set>
 
 #ifndef AdjMat
 #define AdjMat
 
 class GraphAdjMat{
-    private:
+    protected:
         std::vector<int> vertices;//储存节点值
         std::vector<std::vector<int>>adjMat;//储存点间关系
 
@@ -16,7 +17,7 @@ class GraphAdjMat{
         //删除顶点
         void removeVertex(int index);
         //添加边
-        void addEdge(int i,int j);
+        virtual void addEdge(int i,int j);
         //删除边
         void removeEdge(int i,int j);
         //打印

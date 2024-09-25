@@ -11,6 +11,7 @@
 				"main.cpp",
 				"adjacency_matrix.cpp",
 				"adjacency_list.cpp",
+				"prim.cpp",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],

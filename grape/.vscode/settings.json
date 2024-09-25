@@ -40,6 +40,8 @@
         "streambuf": "cpp",
         "typeinfo": "cpp",
         "list": "cpp",
-        "iterator": "cpp"
+        "iterator": "cpp",
+        "unordered_set": "cpp",
+        "map": "cpp"
     }
 }

@@ -2,6 +2,7 @@
 #include <windows.h>
 #include"adjacency_matrix.h"
 #include"adjacency_list.h"
+#include"prim.h"
 
 void testadj_mat()
 {
@@ -42,12 +43,34 @@ void testadj_list()
     ag->BFS(1);
 }
 
+void testprim()
+{
+    //测试成功
+    std::vector<int> vertices = {10, 20, 30, 40, 50,60}; // 顶点值
+    std::vector<std::vector<int>> edges = {
+        {10,20,6},
+        {10,60,1},
+        {10,30,5},
+        {30,60,5},
+        {60,30,4},
+        {20,40,3},
+        {40,60,6},
+        {40,50,6},
+        {50,60,4},
+        {30,50,2}
+    };
+     PrimeGraph Graph_sec(vertices,edges);
+     Graph_sec.print();
+     Graph_sec.generateMST(1);//16
+}
+
 int main()
 {
     SetConsoleOutputCP(CP_UTF8);
     //std::cout<<1<<std::endl;
     //testadj_mat();
-    testadj_list();
+    //testadj_list();
+    testprim();
     return 0;
 }
 
