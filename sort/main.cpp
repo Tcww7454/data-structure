@@ -3,11 +3,15 @@
 #include<vector>
 #include<algorithm>
 #include"qsort.h"
+#include"countint_sort.h"
+#include"radix_sort.h"
 
 //选择排序
+//时间O(n2),非自适应，空间O(1)，原地排序，非稳定排序
 void selectionSort(std::vector<int>&nums);
 
 //插入排序
+//时间O(n2)
 void insertionSort(std::vector<int>&nums);
 
 int main()
@@ -17,8 +21,10 @@ int main()
 
     //selectionSort(nums);
     //insertionSort(nums);
-    quickSort(nums,0,nums.size()-1);
-    for(int num:nums)
+    //quickSort(nums,0,nums.size()-1);
+    //countingSort(nums_p);
+    radixSort(nums_p);
+    for(int num:nums_p)
         std::cout<<num<<"\t";
         std::cout<<std::endl;
     return 0;
