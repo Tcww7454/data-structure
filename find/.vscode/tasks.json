@@ -10,6 +10,7 @@
 				"-g",
 				"main.cpp",
 				"avl.cpp",
+				"red_black.cpp",
 				"-o",
 				"${fileDirname}\\${fileBasenameNoExtension}.exe"
 			],
